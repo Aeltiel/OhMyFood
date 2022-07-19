@@ -1,0 +1,91 @@
+@use "../Utils/variables" as variables;
+@use "../Utils/Mixins" as mixins;
+/* Police début*/
+    /* déclaration police*/
+@font-face {
+    font-family:'Roboto';
+    src: url('Roboto-Medium.ttf');
+}
+@font-face {
+    font-family:'RobotoLight';
+    src: url('Roboto-Light.ttf');
+}
+@font-face {
+    font-family:'Shrikhand';
+    src: url('Shrikhand-Regular.ttf');
+}
+
+    /* Titre et texte*/
+.robotoStyle{
+    font-family: $policeStandard, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+h2{
+    font-family: $policeTitre,Verdana, sans-serif;
+}
+
+h3{
+    font-family: $policeTitre, Verdana, sans-serif;
+    font-weight: lighter;
+}
+
+body{
+    font-family: $policeStandard,Verdana, sans-serif;
+    font-weight: lighter;
+}
+
+/* header police */
+.headerImg {
+    font-family: variables.$policeTitre;
+    font-size: 2em;
+    margin: 0;
+    @include mixins.tablette{
+        font-size: 3em;
+    }
+}
+
+/* section présentation index */
+.txt{
+    text-align: center;
+    &--gras{
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    &--light{
+        font-family: $policeLight;
+    }
+}
+
+/* section restaurant index */
+.resto__txt{
+        font-family: $policeLight;
+    &--gras{
+        font-family: $policeStandard;
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+}
+
+/* footer */
+footer{
+    color: white;
+}
+/* Police fin */
+
+/* général */
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.aFooter{
+    color: white;
+}
+a:visited{
+    color: black;
+}
+
+*{
+    box-sizing: border-box;
+}

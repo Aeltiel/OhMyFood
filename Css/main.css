@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/* Police début*/
+/* déclaration police*/
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: "RobotoLight";
+  src: url("Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "Shrikhand";
+  src: url("Shrikhand-Regular.ttf");
+}
+/* Titre et texte*/
+.robotoStyle {
+  font-family: "Roboto", Verdana, sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: "Shrikhand", Verdana, sans-serif;
+}
+
+h3 {
+  font-family: "Shrikhand", Verdana, sans-serif;
+  font-weight: lighter;
+}
+
+body {
+  font-family: "Roboto", Verdana, sans-serif;
+  font-weight: lighter;
+}
+
+/* header police */
+.headerImg {
+  font-family: "Shrikhand";
+  font-size: 2em;
+}
+
+/* section présentation index */
+.txt {
+  text-align: center;
+}
+.txt--gras {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.txt--light {
+  font-family: "RobotoLight";
+}
+
+/* section restaurant index */
+.resto__txt {
+  font-family: "RobotoLight";
+}
+.resto__txt--gras {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* footer */
+footer {
+  color: white;
+}
+
+/* Police fin */
+/* général */
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.aFooter {
+  color: white;
+}
+
+a:visited {
+  color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* barre de recherche */
+.search {
+  display: flex;
+  background-color: #eaeaea;
+}
+.search__dot {
+  margin-top: 18px;
+}
+
+body {
+  max-width: 100%;
+}
+
+/* Header base*/
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+
+.headerImg {
+  margin: 0;
+}
+
+header a {
+  padding-right: 30%;
+}
+
+footer {
+  background-color: #353535;
+  width: 100%;
+}/*# sourceMappingURL=main.css.map */

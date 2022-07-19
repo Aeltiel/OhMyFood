@@ -1,0 +1,8 @@
+/* barre de recherche */
+.search{
+    display: flex;
+    background-color: $backgroundBar;
+    &__dot{
+        margin-top: 18px;
+    }
+}

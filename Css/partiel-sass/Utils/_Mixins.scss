@@ -1,0 +1,7 @@
+@use "../Utils/variables" as variables;
+
+@mixin tablette {
+    @media screen and (max-width : map-get($breakpoints, tablette)) {
+        @content;    
+    }
+}

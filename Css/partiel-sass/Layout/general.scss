@@ -1,0 +1,26 @@
+@use "../Utils/variables" as variables;
+@use "../Utils/Mixins" as mixins;
+
+body {
+    max-width: 100%;
+}
+/* Header base*/
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+
+header a{
+   padding-right: 30%; 
+}
+
+
+footer{
+    background-color: variables.$backgroundFooter;
+    width: 100%;
+}
