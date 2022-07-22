@@ -1,7 +1,29 @@
-@use "../Utils/variables" as variables;
-
 @mixin tablette {
-    @media screen and (max-width : map-get($breakpoints, tablette)) {
+    @media screen and (min-width : map-get($breakpoints, tablette)) and (max-width : (900px)) {
         @content;    
     }
+}
+
+@mixin desktopPortable{
+    @media screen and (min-width : 901px) and (max-width : map-get($breakpoints, desktopPort)) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width : map-get($breakpoints, desktopPort)) and (max-width : map-get($breakpoints, desktop)) {
+        @content;
+    }
+}
+
+@mixin bouton {
+    width: 230px;
+    height: 50px;
+    border-radius: 30px;
+    color: white;
+    border: hidden;
+    font-size: 1em;
+}
+@mixin DegradeBouton {
+    background: linear-gradient( $colorSecondary, $colorPrimary);
 }

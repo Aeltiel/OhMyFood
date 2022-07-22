@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Il s'agit du 3ème projetde la formation OC développeur Web.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./Css/main.scss:./Css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aeltiel/OhMyFood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aeltiel/OhMyFood/issues"
+  },
+  "homepage": "https://github.com/Aeltiel/OhMyFood#readme"
+}

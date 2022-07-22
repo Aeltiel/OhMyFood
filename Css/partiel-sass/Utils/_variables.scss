@@ -2,6 +2,8 @@ $colorPrimary : #9356DC;
 $colorSecondary : #FF79DA;
 $colorTertiary : #99E2D0;
 $backgroundBar : #eaeaea;
+$backgroundBox : #f6f6f6;
+$fonctionIcone : #7e7e7e;
 $backgroundFooter : #353535;
 
 $policeStandard : 'Roboto';
@@ -9,7 +11,7 @@ $policeLight : 'RobotoLight';
 $policeTitre : 'Shrikhand';
 
 $breakpoints :(
-    tablette : 768px,
+    tablette : 426px,
     desktopPort : 1024px,
-    desktop : 1440px,
+    desktop : 1920px,
 );

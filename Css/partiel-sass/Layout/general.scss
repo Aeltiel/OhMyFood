@@ -1,26 +1,68 @@
-@use "../Utils/variables" as variables;
-@use "../Utils/Mixins" as mixins;
-
 body {
     max-width: 100%;
 }
-/* Header base*/
 header {
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     margin-top: 5%;
     margin-bottom: 3%;
 }
 
-
 header a{
-   padding-right: 30%; 
+   padding-left: 3%;
+   @include desktopPortable{
+    display: none;
+   } 
+   @include desktop{
+    display: none;
+   }
+}
+.logo{
+    display : flex;
+    justify-content: flex-start;
+    display: none;
+    padding: 0;
+    @include tablette{
+        display: none;
+    }
+    @include desktopPortable{
+        display: block;
+        padding-left: 3%;
+    }
+    @include desktop{
+        display: block;
+        padding-left: 3%;
+    }
 }
 
-
 footer{
-    background-color: variables.$backgroundFooter;
     width: 100%;
+    height: auto;
+    background-color: $backgroundFooter;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 3%;
+    padding-bottom: 4%;
+    margin: 0;
+    @include tablette{
+        display: flex;
+    }
+    @include desktopPortable{
+        display : flex
+    }
+    @include desktop{
+        display: flex;
+    }
+}
+
+footer li{
+    padding-top: 1%;
+    padding-right: 2%;
+}
+
+.iconeFoot{
+    padding-right: 3px;
 }
