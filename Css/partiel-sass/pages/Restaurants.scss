@@ -1,0 +1,113 @@
+.background{
+    background-color: $backgroundBox;
+    @include desktopPortable{
+        background-color: white;
+    }
+    @include desktop{
+        background-color: white;
+    }
+}
+
+.imgFond{
+    width: 100%;
+    @include desktopPortable{
+        width: 40%;
+        float: right;
+        clear: both;
+        padding-right: 3%;
+    }
+    @include desktop{
+        width: 40%;
+        float: right;
+        clear: both;
+        padding-right: 3%;
+    }
+}
+
+.menu{
+    position: relative;
+    bottom: 45px;
+    background-color: $backgroundBox;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    &__head{
+        display: flex;
+        padding-left: 3%;
+        align-items: center;
+        @include desktopPortable{
+            width: 40%;
+            justify-content: space-between;
+        }
+        @include desktop{
+            width: 40%;
+            justify-content: space-between;
+        }
+    }
+    &__coeur{
+        display: flex;
+        position: absolute;
+        right: 25px;
+        &--plein{
+            opacity: 0%;
+        }
+        @include desktopPortable{
+            position: static;
+
+        }
+        @include desktop{
+            position: static;
+        }
+    }
+    @include desktopPortable{
+        background-color: white;
+        position: static;
+    }
+    @include desktop{
+        background-color: white;
+        position: static;
+
+    }
+}
+
+.boxMenu{
+    padding-left: 3%;
+    display: flex;
+    flex-wrap: wrap;
+}
+span{
+    text-decoration: underline $colorTertiary 3px;
+    text-underline-offset: 7px;
+}
+
+.entrees{
+    width: 95%;
+}
+
+.plats{
+    width: 95%;
+}
+
+.desserts{
+    width: 95%;
+}
+.menuCarte{
+    &__body{
+        @include MenuCarteBody
+    }
+    &__price{
+        @include MenuCartePrice
+    }
+}
+
+.commande{
+    background-color: $backgroundBox;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+    @include desktopPortable{
+        background-color: white;
+    }
+    @include desktop{
+        background-color: white;
+    }
+}
