@@ -73,6 +73,10 @@
     padding-left: 3%;
     display: flex;
     flex-wrap: wrap;
+    @include desktopPortable{
+    }
+    @include desktop{
+    }
 }
 span{
     text-decoration: underline $colorTertiary 3px;
@@ -81,14 +85,32 @@ span{
 
 .entrees{
     width: 95%;
+    @include desktopPortable{
+        width: 40%;
+    }
+    @include desktop{
+        width: 40%;
+    }
 }
 
 .plats{
     width: 95%;
+    @include desktopPortable{
+        width: 45%;
+    }
+    @include desktop{
+        width: 45%;
+    }
 }
 
 .desserts{
     width: 95%;
+    @include desktopPortable{
+        width: 45%;
+    }
+    @include desktop{
+        width: 45%;
+    }
 }
 .menuCarte{
     &__body{
@@ -111,3 +133,4 @@ span{
         background-color: white;
     }
 }
+
