@@ -1,5 +1,6 @@
 .background{
     background-color: $backgroundBox;
+    overflow: hidden;
     @include desktopPortable{
         background-color: white;
     }
@@ -10,6 +11,9 @@
 
 .imgFond{
     width: 100%;
+    &--taille{
+        margin: -81px 0 -92px 0;
+    }
     @include desktopPortable{
         width: 40%;
         float: right;
@@ -30,10 +34,13 @@
     background-color: $backgroundBox;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
+    padding: 0 5% 0 5%;
     &__head{
         display: flex;
-        padding-left: 3%;
         align-items: center;
+        @include tablette{
+            justify-content: center;
+        }
         @include desktopPortable{
             width: 40%;
             justify-content: space-between;
@@ -46,7 +53,7 @@
     &__coeur{
         display: flex;
         position: absolute;
-        right: 25px;
+        right: 40px;
         &--plein{
             opacity: 0%;
         }
@@ -70,7 +77,6 @@
 }
 
 .boxMenu{
-    padding-left: 3%;
     display: flex;
     flex-wrap: wrap;
     @include desktopPortable{
@@ -112,12 +118,23 @@ span{
         width: 45%;
     }
 }
+
 .menuCarte{
     &__body{
         @include MenuCarteBody
     }
     &__price{
         @include MenuCartePrice
+    }
+    &__check{
+        display: inline-block;
+        width: 20%;
+        height: 54px;
+        text-align: center;
+        padding-top: 20px;
+        background-color: $colorTertiary;
+        color: white;
+        border-radius: 0 15px 15px 0;
     }
 }
 

@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-	<meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<title> OhMyFood ! Accueil </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title> OhMyFood ! Accueil </title>
     <link rel="stylesheet" href="Css/normalize.css" />
     <link rel="stylesheet" href="Css/main.css" />
     <script src="https://kit.fontawesome.com/7a914944f6.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <a class="hiddenArrow" href="index.html"><i class="fa-solid fa-arrow-left fa-xl"></i></a>
@@ -20,18 +22,18 @@
                 <div class="search">
                     <i class="search__dot fa-solid fa-location-dot"></i>
                     <p class="search__txt">Paris, Belleville</p>
-                </div> 
+                </div>
 
                 <div class="boxPresentation">
                     <div class="txt">
                         <p class="txt--gras">Réservez le menu qui vous convient</p>
-                        <p class="txt--light">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
+                        <p class="txt--light">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
                     </div>
 
                     <nav>
-                        <button class= "btn">Explorer nos restaurants</button>
+                        <button class="btn">Explorer nos restaurants</button>
                     </nav>
-            </div>
+                </div>
             </section>
 
             <section id="fonctionnement">
@@ -64,62 +66,83 @@
             </section>
 
             <section id="restaurant">
-                <article class="resto">
+                <div class="resto">
                     <h2 class="robotoStyle robotoStyle--top">Restaurants</h2>
                     <div class="boxResto">
                         <!-- Carte Restaurant la palette du gout début -->
-                        <a class="resto__card" href="LaPaletteDuGout.html">
-                            <img class="resto__img" src="images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurnant La palette du gout" />
-                            <div class="resto__new">Nouveau</div>
-                            <div class="resto__title">
-                                <div class="resto__txt">
-                                    <p class="resto__txt resto__txt--gras">La palette du goût</p>
-                                    <p class="resto__txt">Ménilmontant</p>
+                        <article class="resto__card">
+                            <a href="LaPaletteDuGout.html">
+                                <img class="resto__img" src="images/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                                    alt="restaurnant La palette du gout" />
+                                <div class="resto__title">
+                                    <div class="resto__txt">
+                                        <p class="resto__txt resto__txt--gras">La palette du goût</p>
+                                        <p class="resto__txt">Ménilmontant</p>
+                                    </div>
+                                    <div class="resto__coeur"><i class="fa-regular fa-heart fa-xl"></i></div>
+                                    <div class="resto__coeur resto__coeur--plein"><i class="fa-solid fa-heart fa-xl"></i></div>
                                 </div>
-                                <div class="resto__coeur"><i class="fa-regular fa-heart"></i></div>
-                                <div class="resto__coeur resto__coeur--plein"><i class="fa-solid fa-heart"></i></div>
-                            </div>
-                        </a>
+                                <div class="resto__new">Nouveau</div>
+                            </a>
+                        </article>
                         <!-- Carte Restaurant la palette du gout fin -->
 
                         <!-- Carte Restaurant la note enchantée début-->
-                        <a class="resto__card" href="LaNoteEnchantee.html">
-                            <img class="resto__img" src="images/stil-u2Lp8tXIcjw-unsplash.jpg" alt="restaurant la note enchantée" />
-                            <div class="resto__title">
-                                <p class="resto__txt resto__txt--gras">La note enchantée</p>
-                                <p class="resto__txt">Charonne</p>
-                            </div>
-                            <div class="resto__coeur"><i class="fa-regular fa-heart"></i></div>
-                            <div class="resto__coeur resto__coeur--plein"><i class="fa-solid fa-heart"></i></div>
-                            <div class="resto__new">Nouveau</div>
-                        </a>
+                        <article class="resto__card">
+                            <a href="LaNoteEnchantee.html">
+                                <img class="resto__img" src="images/stil-u2Lp8tXIcjw-unsplash.jpg"
+                                    alt="restaurant la note enchantée" />
+                                <div class="resto__title">
+                                    <div class="resto__txt">
+                                        <p class="resto__txt resto__txt--gras">La note enchantée</p>
+                                        <p class="resto__txt">Charonne</p>
+                                    </div>
+                                </div>
+                                <div class="resto__coeur"><i class="fa-regular fa-heart fa-xl"></i></div>
+                                <div class="resto__coeur resto__coeur--plein"><i class="fa-solid fa-heart fa-xl"></i>
+                                </div>
+                                <div class="resto__new">Nouveau</div>
+                            </a>
+                        </article>
                         <!-- Carte restautant la note enchantée fin -->
 
                         <!-- Carte restaurant A la française début -->
-                        <a class="resto__card" href="ALaFrancaise.html">
-                         <img class="resto__img" src="images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="restaurant A la française" />
-                            <div class="resto__title">
-                                <p class="resto__txt resto__txt--gras">À la française</p>
-                                <p class="resto__txt">Cité rouge</p>
-                            </div>
-                            <div class="resto__coeur"><i class="fa-regular fa-heart"></i></div>
-                            <div class="resto__coeur resto__coeur--plein"><i class="fa-solid fa-heart"></i></div>
-                        </a>
-                         <!-- Carte restaurant A la française fin -->
+                        <article class="resto__card">
+                            <a href="ALaFrancaise.html">
+                                <img class="resto__img" src="images/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                                    alt="restaurant A la française" />
+                                <div class="resto__title">
+                                    <div class="resto__txt">
+                                        <p class="resto__txt resto__txt--gras">À la française</p>
+                                        <p class="resto__txt">Cité rouge</p>
+                                    </div>
+                                </div>
+                                <div class="resto__coeur"><i class="fa-regular fa-heart fa-xl"></i></div>
+                                <div class="resto__coeur resto__coeur--plein"><i class="fa-solid fa-heart fa-xl"></i>
+                                </div>
+                            </a>
+                        </article>
+                        <!-- Carte restaurant A la française fin -->
 
                         <!-- Carte restaurant le délice des sens début -->
-                        <a class="resto__card" href="LeDeliceDesSens.html">
-                            <img class="resto__img" src="images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="restaurant Le délice des sens" />
-                            <div class="resto__title">
-                                <p class="resto__txt resto__txt--gras">Le délice des sens</p>
-                                <p class="resto__txt">Folie-Méricourt</p>
-                            </div>
-                            <div class="resto__coeur"><i class="fa-regular fa-heart"></i></div>
-                            <div class="resto__coeur resto__coeur--plein"><i class="fa-solid fa-heart"></i></div>
-                         </a>
+                        <article class="resto__card">
+                            <a href="LeDeliceDesSens.html">
+                                <img class="resto__img" src="images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                                    alt="restaurant Le délice des sens" />
+                                <div class="resto__title">
+                                    <div class="resto__txt">
+                                        <p class="resto__txt resto__txt--gras">Le délice des sens</p>
+                                        <p class="resto__txt">Folie-Méricourt</p>
+                                    </div>
+                                </div>
+                                <div class="resto__coeur"><i class="fa-regular fa-heart fa-xl"></i></div>
+                                <div class="resto__coeur resto__coeur--plein"><i class="fa-solid fa-heart fa-xl"></i>
+                                </div>
+                            </a>
+                        </article>
                         <!-- carte restaurant le déclice des sens fin -->
                     </div>
-                </article>
+                </div>
             </section>
         </main>
     </div>
@@ -128,18 +151,20 @@
         <ul>
             <li>
                 <i class="iconeFoot fa-solid fa-utensils"></i>
-                <a href="#">Proposer un restaurant</a> 
+                <a href="#">Proposer un restaurant</a>
             </li>
             <li>
-                <i class="iconeFoot fa-solid fa-handshake-angle"></i>
+                <i class="iconeFoot fa-solid fa-handshake-angle fa-xs"></i>
                 <a href="#">Devenir partenaire</a>
             </li>
             <li>
-                <a href="#">Mentions légales</li></a>
+                <a href="#">Mentions légales
+            </li></a>
             <li>
                 <a class="aFooter" href="mailto:ohmyfood@gmail.com">Contact</a>
             </li>
         </ul>
     </footer>
 </body>
+
 </html>
