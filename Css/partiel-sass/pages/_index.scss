@@ -182,6 +182,7 @@ nav{
         margin: 0;
         padding-top: 5px;
         padding-left: 2%;
+
     }
     &__title {
         width: 100%;
@@ -193,10 +194,23 @@ nav{
     &__coeur{
         display: flex;
         position: absolute;
-        bottom: 40px;
-        right: 25px;
+        bottom: 25px;
+        right: 20px;
+        font-size: 1.6em;
         &--plein{
+            opacity: 0;
             background: linear-gradient( $colorPrimary, $colorSecondary);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            transform: skewX(80deg);
+            /*text-shadow: 3px 0px 3px $backgroundBox;*/
+            transition: 0.5s ease-in-out;
+            &:hover{
+                opacity: 1;
+                transform: skewX(0deg);
+            }
         }
     }
+
 }
