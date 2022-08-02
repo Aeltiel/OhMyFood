@@ -804,17 +804,23 @@ span {
 }
 
 .menuCarte {
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 20px;
-  background-color: white;
   height: 70px;
   display: flex;
   justify-content: space-between;
-  border-radius: 20px;
   align-items: center;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 20px;
+  border-radius: 20px;
+  margin-bottom: 15px;
 }
 .menuCarte__body {
+  overflow: hidden;
+  white-space: nowrap;
   padding-left: 12px;
   line-height: 20px;
+}
+.menuCarte__body__text {
+  text-overflow: ellipsis;
 }
 .menuCarte__price {
   display: flex;
@@ -823,6 +829,7 @@ span {
 .menuCarte__text--gras {
   padding-top: 40px;
   padding-right: 20px;
+  padding-left: 10px;
 }
 .menuCarte__check {
   height: 100%;
