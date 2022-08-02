@@ -55,12 +55,19 @@
         position: absolute;
         right: 40px;
         font-size: 1.6em;
+        cursor: pointer;
         &--plein{
-            /*opacity: 0;*/
+            opacity: 0;
             background: linear-gradient( $colorPrimary, $colorSecondary);
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
+            transform: skewX(60deg);
+            transition: 0.5s ease-in-out;
+            &:hover {
+                opacity: 1;
+                transform: skewX(0deg);
+            }
         }
         @include desktopPortable{
             position: static;
@@ -125,21 +132,42 @@ span{
 }
 
 .menuCarte{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 20px;
+    background-color: white;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    align-items: center;
     &__body{
-        @include MenuCarteBody
+        padding-left: 12px;
+        line-height: 20px;
     }
     &__price{
-        @include MenuCartePrice
+        display: flex;
+        height: 100%;
+    }
+    &__text--gras{
+        padding-top: 40px;
+        padding-right: 20px;
     }
     &__check{
-        display: inline-block;
-        width: 20%;
-        height: 54px;
-        text-align: center;
-        padding-top: 20px;
+        height: 100%;
+        width: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: transparent;
         background-color: $colorTertiary;
+        border-radius: 0 20px 20px 0;
+        transition: width 1s ease-in-out;
+    }
+    &:hover &__check{
+        width: 60px;
         color: white;
-        border-radius: 0 15px 15px 0;
+    }
+    &:hover i{
+        animation: checkRotate 0.5s 0.5s both;
     }
 }
 
