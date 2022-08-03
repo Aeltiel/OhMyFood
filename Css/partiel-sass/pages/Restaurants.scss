@@ -19,17 +19,26 @@
     }
 
     @include desktopPortable {
-        width: 40%;
+        width: 30%;
         float: right;
         clear: both;
         padding-right: 3%;
+
+        &--taille {
+            transform: rotate(90deg);
+        }
     }
 
     @include desktop {
-        width: 40%;
+        width: 30%;
         float: right;
         clear: both;
         padding-right: 3%;
+
+        &--taille {
+            margin-right: 3%;
+            transform: rotate(90deg);
+        }
     }
 }
 
@@ -51,12 +60,10 @@
 
         @include desktopPortable {
             width: 40%;
-            justify-content: space-between;
         }
 
         @include desktop {
             width: 40%;
-            justify-content: space-between;
         }
     }
 
@@ -83,13 +90,11 @@
         }
 
         @include desktopPortable {
-            position: static;
+            /*position: static;*/
 
         }
 
-        @include desktop {
-            position: static;
-        }
+        @include desktop {}
     }
 
     @include desktopPortable {
@@ -100,7 +105,6 @@
     @include desktop {
         background-color: white;
         position: static;
-
     }
 }
 
@@ -164,7 +168,13 @@ span {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 20px;
     border-radius: 20px;
     margin-bottom: 15px;
-
+    animation: translateCard 1s forwards;
+    @for $translateCard from 1 through 10 {
+        &--#{$translateCard}{
+            opacity: 0 *$translateCard;
+            animation-delay: 0.3s *$translateCard;
+        }
+    }
     &__body {
         padding-left: 12px;
         line-height: 20px;
@@ -212,10 +222,9 @@ span {
     }
 
     &:hover i {
-        animation: checkRotate 0.5s 0.5s
-            /*both*/
-        ;
+        animation: checkRotate 0.5s 0.5s;
     }
+
 }
 
 .commande {
