@@ -1,26 +1,31 @@
-.background{
+.background {
     background-color: $backgroundBox;
     overflow: hidden;
-    @include desktopPortable{
+
+    @include desktopPortable {
         background-color: white;
     }
-    @include desktop{
+
+    @include desktop {
         background-color: white;
     }
 }
 
-.imgFond{
+.imgFond {
     width: 100%;
-    &--taille{
+
+    &--taille {
         margin: -81px 0 -92px 0;
     }
-    @include desktopPortable{
+
+    @include desktopPortable {
         width: 40%;
         float: right;
         clear: both;
         padding-right: 3%;
     }
-    @include desktop{
+
+    @include desktop {
         width: 40%;
         float: right;
         clear: both;
@@ -28,111 +33,129 @@
     }
 }
 
-.menu{
+.menu {
     position: relative;
     bottom: 45px;
     background-color: $backgroundBox;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     padding: 0 5% 0 5%;
-    &__head{
+
+    &__head {
         display: flex;
         align-items: center;
-        @include tablette{
+
+        @include tablette {
             justify-content: center;
         }
-        @include desktopPortable{
+
+        @include desktopPortable {
             width: 40%;
             justify-content: space-between;
         }
-        @include desktop{
+
+        @include desktop {
             width: 40%;
             justify-content: space-between;
         }
     }
-    &__coeur{
+
+    &__coeur {
         display: flex;
         position: absolute;
         right: 40px;
         font-size: 1.6em;
         cursor: pointer;
-        &--plein{
+
+        &--plein {
             opacity: 0;
-            background: linear-gradient( $colorPrimary, $colorSecondary);
+            background: linear-gradient($colorPrimary, $colorSecondary);
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
             transform: skewX(60deg);
             transition: 0.5s ease-in-out;
+
             &:hover {
                 opacity: 1;
                 transform: skewX(0deg);
             }
         }
-        @include desktopPortable{
+
+        @include desktopPortable {
             position: static;
 
         }
-        @include desktop{
+
+        @include desktop {
             position: static;
         }
     }
-    @include desktopPortable{
+
+    @include desktopPortable {
         background-color: white;
         position: static;
     }
-    @include desktop{
+
+    @include desktop {
         background-color: white;
         position: static;
 
     }
 }
 
-.boxMenu{
+.boxMenu {
     display: flex;
     flex-wrap: wrap;
-    @include desktopPortable{
-    }
-    @include desktop{
-    }
+
+    @include desktopPortable {}
+
+    @include desktop {}
 }
-span{
+
+span {
     text-decoration: underline $colorTertiary 3px;
     text-underline-offset: 7px;
 }
 
-.entrees{
+.entrees {
     width: 95%;
 
-    @include desktopPortable{
+    @include desktopPortable {
         width: 40%;
     }
-    @include desktop{
+
+    @include desktop {
         width: 40%;
     }
 }
 
-.plats{
+.plats {
     width: 95%;
-    @include desktopPortable{
+
+    @include desktopPortable {
         width: 45%;
     }
-    @include desktop{
+
+    @include desktop {
         width: 45%;
     }
 }
 
-.desserts{
+.desserts {
     width: 95%;
-    @include desktopPortable{
+
+    @include desktopPortable {
         width: 45%;
     }
-    @include desktop{
+
+    @include desktop {
         width: 45%;
     }
 }
 
-.menuCarte{
+.menuCarte {
+    width: 100%;
     height: 70px;
     display: flex;
     justify-content: space-between;
@@ -141,25 +164,37 @@ span{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 20px;
     border-radius: 20px;
     margin-bottom: 15px;
-    &__body{
-        overflow: hidden;
-        white-space: nowrap;
+
+    &__body {
         padding-left: 12px;
         line-height: 20px;
-        &__text{
+        cursor: pointer;
+        transition: width 1 ease-in-out;
+
+        p {
+            white-space: nowrap;
+            overflow: hidden;
             text-overflow: ellipsis;
         }
+
+        &:hover {
+            width: 66%;
+        }
     }
-    &__price{
-        display: flex;
+
+    &__price {
+        max-width: 30%;
         height: 100%;
+        display: flex;
+        cursor: pointer;
     }
-    &__text--gras{
+
+    &__text--gras {
         padding-top: 40px;
         padding-right: 20px;
-        padding-left: 10px;
     }
-    &__check{
+
+    &__check {
         height: 100%;
         width: 0px;
         display: flex;
@@ -170,25 +205,30 @@ span{
         border-radius: 0 20px 20px 0;
         transition: width 1s ease-in-out;
     }
-    &:hover &__check{
+
+    &:hover &__check {
         width: 60px;
         color: white;
     }
-    &:hover i{
-        animation: checkRotate 0.5s 0.5s both;
+
+    &:hover i {
+        animation: checkRotate 0.5s 0.5s
+            /*both*/
+        ;
     }
 }
 
-.commande{
+.commande {
     background-color: $backgroundBox;
     display: flex;
     justify-content: center;
     padding-bottom: 80px;
-    @include desktopPortable{
+
+    @include desktopPortable {
         background-color: white;
     }
-    @include desktop{
+
+    @include desktop {
         background-color: white;
     }
 }
-
