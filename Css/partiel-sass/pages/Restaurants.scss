@@ -16,6 +16,11 @@
 
     &--taille {
         margin: -81px 0 -92px 0;
+
+        @include tablette {
+            height: 700px;
+        }
+
     }
 
     @include desktopPortable {
@@ -24,9 +29,6 @@
         clear: both;
         padding-right: 3%;
 
-        &--taille {
-            transform: rotate(90deg);
-        }
     }
 
     @include desktop {
@@ -35,10 +37,6 @@
         clear: both;
         padding-right: 3%;
 
-        &--taille {
-            margin-right: 3%;
-            transform: rotate(90deg);
-        }
     }
 }
 
@@ -89,12 +87,18 @@
             }
         }
 
+        @include tablette {
+            right: 10%;
+        }
+
         @include desktopPortable {
-            /*position: static;*/
+            right: 60%;
 
         }
 
-        @include desktop {}
+        @include desktop {
+            right: 60%;
+        }
     }
 
     @include desktopPortable {
@@ -123,12 +127,11 @@ span {
 }
 
 .entrees {
-    width: 95%;
-
+    width: 95%; 
     @include desktopPortable {
         width: 40%;
     }
-
+    
     @include desktop {
         width: 40%;
     }
@@ -136,7 +139,7 @@ span {
 
 .plats {
     width: 95%;
-
+    animation: visibilities 1.5s ease-in-out forwards;
     @include desktopPortable {
         width: 45%;
     }
@@ -148,7 +151,7 @@ span {
 
 .desserts {
     width: 95%;
-
+    animation: visibilities 1s 1.3s ease-in-out both;
     @include desktopPortable {
         width: 45%;
     }
@@ -160,24 +163,27 @@ span {
 
 .menuCarte {
     width: 100%;
-    height: 70px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 20px;
-    border-radius: 20px;
+    border-radius: 15px;
     margin-bottom: 15px;
     animation: translateCard 1s forwards;
+
     @for $translateCard from 1 through 10 {
-        &--#{$translateCard}{
-            opacity: 0 *$translateCard;
+        &--#{$translateCard} {
+            visibility: hidden;
             animation-delay: 0.3s *$translateCard;
         }
     }
+
     &__body {
+        width: 80%;
         padding-left: 12px;
-        line-height: 20px;
+        line-height: 17px;
         cursor: pointer;
         transition: width 1 ease-in-out;
 
@@ -200,7 +206,7 @@ span {
     }
 
     &__text--gras {
-        padding-top: 40px;
+        padding-top: 35px;
         padding-right: 20px;
     }
 
@@ -212,7 +218,7 @@ span {
         align-items: center;
         color: transparent;
         background-color: $colorTertiary;
-        border-radius: 0 20px 20px 0;
+        border-radius: 0 15px 15px 0;
         transition: width 1s ease-in-out;
     }
 
@@ -229,9 +235,11 @@ span {
 
 .commande {
     background-color: $backgroundBox;
+    position: relative;
+    bottom: 20px;
     display: flex;
     justify-content: center;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
 
     @include desktopPortable {
         background-color: white;
