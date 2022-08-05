@@ -28,3 +28,8 @@
     background: linear-gradient( $colorSecondary, $colorPrimary);
 }
 
+@mixin layoutMenu {
+    background-color: $backgroundBar;
+    border-radius: 20px;
+    padding: 0 2% 0 2%;
+}

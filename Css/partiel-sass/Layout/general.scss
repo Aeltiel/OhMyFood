@@ -1,6 +1,7 @@
 body {
     max-width: 100%;
 }
+
 header {
     width: 100%;
     position: relative;
@@ -9,74 +10,88 @@ header {
     justify-content: center;
     padding-top: 5%;
     margin-bottom: 3%;
-    @include desktopPortable{
+
+    @include desktopPortable {
         padding-top: 2%;
     }
-    @include desktop{
+
+    @include desktop {
         padding-top: 2%;
     }
 }
 
-.hiddenArrow{
+.hiddenArrow {
     visibility: hidden;
 }
 
-header a{
+header a {
     position: absolute;
     left: 12px;
-   padding-left: 3%;
-   @include desktopPortable{
-    display: none;
-   } 
-   @include desktop{
-    display: none;
-   }
-}
-.logo{
-    display : flex;
-    justify-content: flex-start;
-    display: none;
-    padding: 0;
+    padding-left: 3%;
     @include tablette{
+        font-size: 1.5em;
+    }
+
+    @include desktopPortable {
         display: none;
     }
-    @include desktopPortable{
-        display: block;
-        padding-left: 3%;
-    }
-    @include desktop{
-        display: block;
-        padding-left: 3%;
+
+    @include desktop {
+        display: none;
     }
 }
 
-footer{
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    display: none;
+    padding: 0;
+
+    @include tablette {
+        display: none;
+    }
+
+    @include desktopPortable {
+        position: static;
+        display: block;
+    }
+
+    @include desktop {
+        position: static;
+        display: block;
+    }
+}
+
+footer {
     width: 100%;
     height: auto;
     background-color: $backgroundFooter;
 }
 
-ul{
+ul {
     list-style-type: none;
     padding-left: 5%;
     padding-bottom: 4%;
     margin: 0;
-    @include tablette{
+
+    @include tablette {
         display: flex;
     }
-    @include desktopPortable{
-        display : flex
+
+    @include desktopPortable {
+        display: flex
     }
-    @include desktop{
+
+    @include desktop {
         display: flex;
     }
 }
 
-footer li{
+footer li {
     padding-top: 3%;
     padding-right: 3%;
 }
 
-.iconeFoot{
+.iconeFoot {
     padding-right: 8px;
 }

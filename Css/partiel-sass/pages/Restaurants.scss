@@ -20,23 +20,18 @@
         @include tablette {
             height: 700px;
         }
-
     }
 
     @include desktopPortable {
         width: 30%;
-        float: right;
-        clear: both;
-        padding-right: 3%;
+        margin-left: 5%;
 
     }
 
     @include desktop {
         width: 30%;
-        float: right;
-        clear: both;
-        padding-right: 3%;
-
+        margin-left: 5%;
+        
     }
 }
 
@@ -116,9 +111,15 @@
     display: flex;
     flex-wrap: wrap;
 
-    @include desktopPortable {}
+    @include desktopPortable {
+        gap: 40px;
+        height: 300px;
+    }
 
-    @include desktop {}
+    @include desktop {
+        gap: 40px;
+        height: 300px;
+    }
 }
 
 span {
@@ -129,11 +130,13 @@ span {
 .entrees {
     width: 95%; 
     @include desktopPortable {
-        width: 40%;
+        width: 30%;
+        @include layoutMenu;
     }
     
     @include desktop {
-        width: 40%;
+        width: 30%;
+        @include layoutMenu;
     }
 }
 
@@ -141,11 +144,13 @@ span {
     width: 95%;
     animation: visibilities 1.5s ease-in-out forwards;
     @include desktopPortable {
-        width: 45%;
+        width: 30%;
+        @include layoutMenu;
     }
 
     @include desktop {
-        width: 45%;
+        width: 30%;
+        @include layoutMenu;
     }
 }
 
@@ -153,11 +158,13 @@ span {
     width: 95%;
     animation: visibilities 1s 1.3s ease-in-out both;
     @include desktopPortable {
-        width: 45%;
+        width: 30%;
+        @include layoutMenu;
     }
 
     @include desktop {
-        width: 45%;
+        width: 30%;
+        @include layoutMenu;
     }
 }
 
@@ -230,7 +237,6 @@ span {
     &:hover i {
         animation: checkRotate 0.5s 0.5s;
     }
-
 }
 
 .commande {
@@ -242,10 +248,18 @@ span {
     padding-bottom: 40px;
 
     @include desktopPortable {
+        width: 20%;
         background-color: white;
+        bottom: 385px;
+        left: 700px;
+        padding: 0;
     }
 
     @include desktop {
+        width: 20%;
         background-color: white;
+        bottom: 385px;
+        left: 700px;
+        padding: 0;
     }
 }
