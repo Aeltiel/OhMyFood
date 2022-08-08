@@ -64,6 +64,20 @@
   font-size: 1em;
   background: linear-gradient(#FF79DA, #9356DC);
 }
+@media screen and (min-width: 901px) and (max-width: 1024px) {
+  .btn:hover {
+    background: #99E2D0;
+    color: black;
+    animation: pulse 1.5s ease-in-out infinite;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
+  .btn:hover {
+    background: #99E2D0;
+    color: black;
+    animation: pulse 1.5s ease-in-out infinite;
+  }
+}
 
 @font-face {
   font-family: "Roboto";
@@ -679,13 +693,29 @@ nav {
 @media screen and (min-width: 901px) and (max-width: 1024px) {
   .imgFond {
     width: 30%;
-    /*margin-left: 5%;*/
+    float: right;
+    clear: both;
+    margin: 0 3% 0 5%;
+    border-radius: 20px;
+    border: solid 5px #99E2D0;
+    padding: 10px;
+  }
+  .imgFond--taille {
+    width: 20%;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1920px) {
   .imgFond {
     width: 30%;
-    margin-left: 5%;
+    float: right;
+    clear: both;
+    margin: 0 3% 0 5%;
+    border-radius: 20px;
+    border: solid 5px #99E2D0;
+    padding: 10px;
+  }
+  .imgFond--taille {
+    width: 20%;
   }
 }
 
@@ -709,11 +739,13 @@ nav {
 @media screen and (min-width: 901px) and (max-width: 1024px) {
   .menu__head {
     width: 40%;
+    padding-bottom: 20%;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1920px) {
   .menu__head {
     width: 40%;
+    padding-bottom: 20%;
   }
 }
 .menu__coeur {
@@ -748,7 +780,7 @@ nav {
 }
 @media screen and (min-width: 1024px) and (max-width: 1920px) {
   .menu__coeur {
-    right: 60%;
+    right: 70%;
   }
 }
 @media screen and (min-width: 901px) and (max-width: 1024px) {
@@ -772,12 +804,14 @@ nav {
   .boxMenu {
     gap: 40px;
     height: 300px;
+    justify-content: space-around;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1920px) {
   .boxMenu {
     gap: 40px;
     height: 300px;
+    justify-content: space-around;
   }
 }
 
@@ -905,7 +939,7 @@ span {
   padding-left: 12px;
   line-height: 17px;
   cursor: pointer;
-  transition: width 1 ease-in-out;
+  transition: width 1s ease-in-out;
 }
 .menuCarte__body p {
   white-space: nowrap;
@@ -941,7 +975,8 @@ span {
   color: white;
 }
 .menuCarte:hover i {
-  animation: checkRotate 0.5s 0.5s;
+  transform: rotate(90deg);
+  animation: checkRotate 0.5s 0.5s forwards;
 }
 
 .commande {
@@ -956,18 +991,16 @@ span {
   .commande {
     width: 20%;
     background-color: white;
-    bottom: 385px;
-    left: 700px;
-    padding: 0;
+    bottom: 500px;
+    left: 444px;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1920px) {
   .commande {
     width: 20%;
     background-color: white;
-    bottom: 385px;
-    left: 700px;
-    padding: 0;
+    bottom: 500px;
+    left: 444px;
   }
 }
 

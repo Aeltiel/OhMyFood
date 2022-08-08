@@ -24,6 +24,7 @@
     border: hidden;
     font-size: 1em;
 }
+
 @mixin DegradeBouton {
     background: linear-gradient( $colorSecondary, $colorPrimary);
 }

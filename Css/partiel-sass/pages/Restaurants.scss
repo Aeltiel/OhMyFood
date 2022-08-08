@@ -24,14 +24,31 @@
 
     @include desktopPortable {
         width: 30%;
-        /*margin-left: 5%;*/
+        float: right;
+        clear: both;
+        margin: 0 3% 0 5%;
+        border-radius: 20px;
+        border: solid 5px $colorTertiary;
+        padding: 10px;
+
+        &--taille {
+            width: 20%;
+        }
 
     }
 
     @include desktop {
         width: 30%;
-        margin-left: 5%;
-        
+        float: right;
+        clear: both;
+        margin: 0 3% 0 5%;
+        border-radius: 20px;
+        border: solid 5px $colorTertiary;
+        padding: 10px;
+
+        &--taille {
+            width: 20%;
+        }
     }
 }
 
@@ -53,10 +70,12 @@
 
         @include desktopPortable {
             width: 40%;
+            padding-bottom: 20%;
         }
 
         @include desktop {
             width: 40%;
+            padding-bottom: 20%;
         }
     }
 
@@ -92,7 +111,7 @@
         }
 
         @include desktop {
-            right: 60%;
+            right: 70%;
         }
     }
 
@@ -114,11 +133,13 @@
     @include desktopPortable {
         gap: 40px;
         height: 300px;
+        justify-content: space-around;
     }
 
     @include desktop {
         gap: 40px;
         height: 300px;
+        justify-content: space-around;
     }
 }
 
@@ -128,12 +149,13 @@ span {
 }
 
 .entrees {
-    width: 95%; 
+    width: 95%;
+
     @include desktopPortable {
         width: 30%;
         @include layoutMenu;
     }
-    
+
     @include desktop {
         width: 30%;
         @include layoutMenu;
@@ -143,6 +165,7 @@ span {
 .plats {
     width: 95%;
     animation: visibilities 1.5s ease-in-out forwards;
+
     @include desktopPortable {
         width: 30%;
         @include layoutMenu;
@@ -157,6 +180,7 @@ span {
 .desserts {
     width: 95%;
     animation: visibilities 1s 1.3s ease-in-out both;
+
     @include desktopPortable {
         width: 30%;
         @include layoutMenu;
@@ -192,7 +216,7 @@ span {
         padding-left: 12px;
         line-height: 17px;
         cursor: pointer;
-        transition: width 1 ease-in-out;
+        transition: width 1s ease-in-out;
 
         p {
             white-space: nowrap;
@@ -235,7 +259,8 @@ span {
     }
 
     &:hover i {
-        animation: checkRotate 0.5s 0.5s;
+        transform: rotate(90deg);
+        animation: checkRotate 0.5s 0.5s forwards;
     }
 }
 
@@ -250,16 +275,15 @@ span {
     @include desktopPortable {
         width: 20%;
         background-color: white;
-        bottom: 385px;
-        left: 700px;
-        padding: 0;
+        bottom: 500px;
+        left: 444px;
+
     }
 
     @include desktop {
         width: 20%;
         background-color: white;
-        bottom: 385px;
-        left: 700px;
-        padding: 0;
+        bottom: 500px;
+        left: 444px;
     }
 }
