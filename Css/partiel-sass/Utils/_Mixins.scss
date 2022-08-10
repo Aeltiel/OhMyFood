@@ -1,17 +1,17 @@
 @mixin tablette {
-    @media screen and (min-width : map-get($breakpoints, tablette)) and (max-width : (900px)) {
+    @media screen and (min-width : map-get($breakpoints, tablette)) and (max-width : (1080px)) {
         @content;    
     }
 }
 
 @mixin desktopPortable{
-    @media screen and (min-width : 901px) and (max-width : map-get($breakpoints, desktopPort)) {
+    @media screen and (min-width : map-get($breakpoints, desktopPort)) and (max-width : 1500px) {
         @content;
     }
 }
 
 @mixin desktop {
-    @media screen and (min-width : map-get($breakpoints, desktopPort)) and (max-width : map-get($breakpoints, desktop)) {
+    @media screen and (min-width : 1501px) and (max-width : map-get($breakpoints, desktop)) {
         @content;
     }
 }

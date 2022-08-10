@@ -105,20 +105,20 @@ a:visited{
             margin-top: 1%;
         }
         @include desktopPortable{
-            margin-top: 1%;
+            margin-top: 3%;
         }
         @include desktop{
-            margin-top: 1%;
+            margin-top: 3%;
         }
     }
     @include tablette{
         text-align: center;
     }
     @include desktopPortable{
-        text-align: left;
+        text-align: center;
     }
     @include desktop{
-        text-align: left;
+        text-align: center;
     }
 }
 
