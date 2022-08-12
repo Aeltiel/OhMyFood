@@ -971,7 +971,7 @@ span {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menuCarte__body:hover {
+.menuCarte:hover .menuCarte__body {
   width: 66%;
 }
 .menuCarte__price {

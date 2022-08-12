@@ -224,9 +224,9 @@ span {
             text-overflow: ellipsis;
         }
 
-        &:hover {
-            width: 66%;
-        }
+    }
+    &:hover &__body{
+        width: 66%;
     }
 
     &__price {
