@@ -7,3 +7,5 @@ Sera utilisé :
 Le HTML pour la structure de la page. 
 Ainsi que du CSS pour la mise en forme et pour réaliser les animations du site. 
 Sass est utiliser dans ce projet.
+
+Retrouver le résultat en consultant cette page : https://aeltiel.github.io/OhMyFood/index.html
